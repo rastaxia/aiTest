@@ -3,8 +3,6 @@ const OpenAI = require("openai");
 const bodyParser = require("body-parser");
 const path = require("path");
 
-// set the node version to 18.18.0
-process.env.NODE_VERSION = "v18.18.0";
 // Set the OpenAI API key as an environment variable
 process.env.OPENAI_API_KEY = process.env.apiKey;
 
