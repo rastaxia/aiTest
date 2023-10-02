@@ -5,8 +5,7 @@ const path = require("path");
 const NODE_VERSION = "v18.18.0";
 
 // Set the OpenAI API key as an environment variable
-process.env.OPENAI_API_KEY =
-  "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";
+process.env.OPENAI_API_KEY = process.env.apiKey;
 
 const openai = new OpenAI();
 
