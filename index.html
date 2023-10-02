@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Fairy Tale Generator</title>
+  </head>
+  <body>
+    <h1>Sprookjes Generator</h1>
+    <form id="name-form" action="/generate-fairy-tale" method="POST">
+      <label for="name">Vul de naam van de hoofdpersoon in:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="onderwerp">Vul het onderwerp van het verhaal in:</label>
+      <input type="text" id="onderwerp" name="onderwerp" required />
+
+      <label for="stijl">Vul de stijl van het verhaal in:</label>
+      <input type="text" id="stijl" name="stijl" required />
+
+      <button type="submit">Generate Fairy Tale</button>
+    </form>
+    <div class="storyArea">
+      <div id="loading-spinner">Loading...</div>
+      <article id="output"></article>
+    </div>
+  </body>
+</html>
